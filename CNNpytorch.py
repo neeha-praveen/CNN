@@ -33,7 +33,7 @@ transform = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize((0.5),(0.5))
 ])
-trainset = torchvision.datasets.MNIST(
+trainset = torchvision.datasets.MNIST(  # MNIST is a standard dataset that contains images of handwritten digits (0-9) along with their corresponding labels.
     root='./data',
     train=True,
     transform=transform,
